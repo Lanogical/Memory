@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0882BC9A8CFC6166337235DD /* Pods_Memory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2904E8F86A34E19E745CC6 /* Pods_Memory.framework */; };
 		86279DC01E610ADD0076F165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86279DBF1E610ADC0076F165 /* AppDelegate.swift */; };
 		86279DC21E610ADD0076F165 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86279DC11E610ADD0076F165 /* FirstViewController.swift */; };
 		86279DC41E610ADD0076F165 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86279DC31E610ADD0076F165 /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78C6D2312566317BC78C3F6E /* Pods-Memory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memory.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memory/Pods-Memory.release.xcconfig"; sourceTree = "<group>"; };
 		86279DBC1E610ADC0076F165 /* Memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86279DBF1E610ADC0076F165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86279DC11E610ADD0076F165 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		86279DC81E610ADD0076F165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86279DCB1E610ADD0076F165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86279DCD1E610ADD0076F165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2904E8F86A34E19E745CC6 /* Pods_Memory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E846EA7004B8A756FCA705F /* Pods-Memory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memory/Pods-Memory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0882BC9A8CFC6166337235DD /* Pods_Memory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290F823211B610CD0BAD5A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E2904E8F86A34E19E745CC6 /* Pods_Memory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		806922BA06359428F7985EEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E846EA7004B8A756FCA705F /* Pods-Memory.debug.xcconfig */,
+				78C6D2312566317BC78C3F6E /* Pods-Memory.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		86279DB31E610ADC0076F165 = {
 			isa = PBXGroup;
 			children = (
 				86279DBE1E610ADC0076F165 /* Memory */,
 				86279DBD1E610ADC0076F165 /* Products */,
+				806922BA06359428F7985EEC /* Pods */,
+				290F823211B610CD0BAD5A42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86279DD01E610ADD0076F165 /* Build configuration list for PBXNativeTarget "Memory" */;
 			buildPhases = (
+				03B94F6286B84FEE6BE54DB2 /* [CP] Check Pods Manifest.lock */,
 				86279DB81E610ADC0076F165 /* Sources */,
 				86279DB91E610ADC0076F165 /* Frameworks */,
 				86279DBA1E610ADC0076F165 /* Resources */,
+				FA0739BA68242EC1667AAC58 /* [CP] Embed Pods Frameworks */,
+				07E2AD58FBAE0B8090E6D27D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03B94F6286B84FEE6BE54DB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		07E2AD58FBAE0B8090E6D27D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memory/Pods-Memory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0739BA68242EC1667AAC58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memory/Pods-Memory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86279DB81E610ADC0076F165 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		86279DD11E610ADD0076F165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E846EA7004B8A756FCA705F /* Pods-Memory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36HA7C4RHE;
@@ -276,6 +352,7 @@
 		};
 		86279DD21E610ADD0076F165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C6D2312566317BC78C3F6E /* Pods-Memory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36HA7C4RHE;
