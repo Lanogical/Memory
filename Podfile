@@ -7,6 +7,7 @@ target 'Memory' do
 
   # Pods for Memory
   pod 'Material'
+  pod 'Motion'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
 end

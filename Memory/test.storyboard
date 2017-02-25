@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wfM-m2-RPv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Media Controller-->
+        <scene sceneID="zxf-Sr-4yj">
+            <objects>
+                <viewController id="wfM-m2-RPv" customClass="MediaController" customModule="Memory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SxV-yo-UVs"/>
+                        <viewControllerLayoutGuide type="bottom" id="EWg-wL-e8Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TUA-L5-FRk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zex-AM-HVi">
+                                <rect key="frame" x="8" y="28" width="359" height="359"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zex-AM-HVi" secondAttribute="height" multiplier="1:1" id="l3g-Sp-wuy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bF-2K-bAt">
+                                <rect key="frame" x="50" y="403" width="275" height="30"/>
+                                <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="TakePhotoWithSender:" destination="wfM-m2-RPv" eventType="touchUpInside" id="xXM-0D-g8h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zex-AM-HVi" secondAttribute="trailing" constant="8" id="3Dq-9f-Mix"/>
+                            <constraint firstItem="zex-AM-HVi" firstAttribute="leading" secondItem="TUA-L5-FRk" secondAttribute="leading" constant="8" id="6Mz-hx-RhG"/>
+                            <constraint firstItem="2bF-2K-bAt" firstAttribute="leading" secondItem="TUA-L5-FRk" secondAttribute="leading" constant="50" id="F8M-Br-cHJ"/>
+                            <constraint firstItem="2bF-2K-bAt" firstAttribute="top" secondItem="zex-AM-HVi" secondAttribute="bottom" constant="16" id="LmZ-Vf-fkC"/>
+                            <constraint firstItem="zex-AM-HVi" firstAttribute="top" secondItem="SxV-yo-UVs" secondAttribute="bottom" constant="8" id="PKa-Z5-TYY"/>
+                            <constraint firstAttribute="trailing" secondItem="2bF-2K-bAt" secondAttribute="trailing" constant="50" id="irv-2F-80U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="zex-AM-HVi" id="Ntc-Fc-TZN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFA-Lh-lLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="152"/>
+        </scene>
+    </scenes>
+</document>

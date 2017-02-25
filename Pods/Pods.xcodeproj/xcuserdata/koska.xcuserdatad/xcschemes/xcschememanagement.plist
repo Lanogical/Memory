@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Motion.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Memory.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -38,6 +43,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D02EE4E5CC4EC8BAD908097C64B700C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>623DB8989E493D3CD933558D5B27BC91</key>
+		<key>6E894DF1DFD12E2208FC1A7265D8E4E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

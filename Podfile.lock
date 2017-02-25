@@ -30,11 +30,15 @@ PODS:
   - Material (2.4.18):
     - Material/Core (= 2.4.18)
   - Material/Core (2.4.18)
+  - Motion (1.0.3):
+    - Motion/Core (= 1.0.3)
+  - Motion/Core (1.0.3)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Material
+  - Motion
 
 SPEC CHECKSUMS:
   Firebase: 5bc34d7b5ff5792e3386c8b28dc6265deeab0da4
@@ -45,7 +49,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   Material: 1523b6c85b1d18805da2cb28040000b40bcefc7e
+  Motion: 6665469c8268bc424c1c3d8e8f7bc99e28178666
 
-PODFILE CHECKSUM: e01887df9a6bc2891d6f8e9d0f0e1821b7253fe6
+PODFILE CHECKSUM: e3061a9b3f0a7b216b030a785f1dcc03bd399524
 
 COCOAPODS: 1.2.0

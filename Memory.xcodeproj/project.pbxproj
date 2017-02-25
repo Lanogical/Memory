@@ -17,6 +17,8 @@
 		86279DD81E6115400076F165 /* ResturantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86279DD71E6115400076F165 /* ResturantViewController.swift */; };
 		86279DDA1E61154A0076F165 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86279DD91E61154A0076F165 /* ShoppingViewController.swift */; };
 		86279DDC1E61155E0076F165 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86279DDB1E61155E0076F165 /* AppsViewController.swift */; };
+		865DB6FB1E6238E000625EAC /* MediaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865DB6FA1E6238E000625EAC /* MediaController.swift */; };
+		865DB6FD1E623A5100625EAC /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865DB6FC1E623A5100625EAC /* test.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		86279DD71E6115400076F165 /* ResturantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResturantViewController.swift; sourceTree = "<group>"; };
 		86279DD91E61154A0076F165 /* ShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		86279DDB1E61155E0076F165 /* AppsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
+		865DB6FA1E6238E000625EAC /* MediaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaController.swift; sourceTree = "<group>"; };
+		865DB6FC1E623A5100625EAC /* test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		8E2904E8F86A34E19E745CC6 /* Pods_Memory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E846EA7004B8A756FCA705F /* Pods-Memory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memory/Pods-Memory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,8 @@
 				86279DD71E6115400076F165 /* ResturantViewController.swift */,
 				86279DD91E61154A0076F165 /* ShoppingViewController.swift */,
 				86279DDB1E61155E0076F165 /* AppsViewController.swift */,
+				865DB6FA1E6238E000625EAC /* MediaController.swift */,
+				865DB6FC1E623A5100625EAC /* test.storyboard */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 			files = (
 				86279DCC1E610ADD0076F165 /* LaunchScreen.storyboard in Resources */,
 				86279DC91E610ADD0076F165 /* Assets.xcassets in Resources */,
+				865DB6FD1E623A5100625EAC /* test.storyboard in Resources */,
 				86279DC71E610ADD0076F165 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +236,7 @@
 				86279DDC1E61155E0076F165 /* AppsViewController.swift in Sources */,
 				86279DD41E6115130076F165 /* ReceiptViewController.swift in Sources */,
 				86279DD81E6115400076F165 /* ResturantViewController.swift in Sources */,
+				865DB6FB1E6238E000625EAC /* MediaController.swift in Sources */,
 				86279DDA1E61154A0076F165 /* ShoppingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

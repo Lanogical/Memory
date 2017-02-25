@@ -3,7 +3,7 @@
 //  Memory
 //
 //  Created by Ben Koska on 2/24/17.
-//  Copyright © 2017 Lanogical. All rights reserved.
+//  Copyright © 2017. All rights reserved.
 //
 
 import UIKit
