@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -94,7 +94,7 @@
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA" customClass="BottomTabBar" customModule="Material">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,13 +102,16 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="RDu-2H-9Tp" kind="relationship" relationship="viewControllers" id="mV5-j1-yXP"/>
+                        <segue destination="SrD-K8-EtB" kind="relationship" relationship="viewControllers" id="DEM-Wu-EYo"/>
+                        <segue destination="aUa-xA-UdX" kind="relationship" relationship="viewControllers" id="0wN-LL-NB0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Books-->
+        <!--Resturants-->
         <scene sceneID="zzk-50-Zmg">
             <objects>
                 <viewController id="RDu-2H-9Tp" customClass="SecondViewController" customModule="Memory" customModuleProvider="target" sceneMemberID="viewController">
@@ -142,15 +145,98 @@
                             <constraint firstItem="5cB-4e-B1U" firstAttribute="top" secondItem="V7p-Mi-iVm" secondAttribute="bottom" constant="8" symbolic="YES" id="s03-bF-Fea"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Books" image="ic_book" id="YYI-KW-HeP"/>
+                    <tabBarItem key="tabBarItem" title="Resturants" image="ic_store" id="YYI-KW-HeP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCa-dx-NiB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1058"/>
+            <point key="canvasLocation" x="750" y="1051"/>
+        </scene>
+        <!--Apps-->
+        <scene sceneID="KZj-FV-VIC">
+            <objects>
+                <viewController id="aUa-xA-UdX" customClass="SecondViewController" customModule="Memory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mxw-77-FgJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="AMu-Sm-Gjk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nS1-tA-bgX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wCV-wP-fA4">
+                                <rect key="frame" x="83" y="313" width="210" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohs-rE-rUl">
+                                <rect key="frame" x="80" y="363" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ohs-rE-rUl" firstAttribute="centerX" secondItem="wCV-wP-fA4" secondAttribute="centerX" id="cj7-h1-z8l"/>
+                            <constraint firstAttribute="centerY" secondItem="wCV-wP-fA4" secondAttribute="centerY" id="mc4-uo-eEB"/>
+                            <constraint firstAttribute="centerX" secondItem="wCV-wP-fA4" secondAttribute="centerX" id="zZx-3q-0D8"/>
+                            <constraint firstItem="Ohs-rE-rUl" firstAttribute="top" secondItem="wCV-wP-fA4" secondAttribute="bottom" constant="8" symbolic="YES" id="zb4-Su-hay"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Apps" image="ic_apps" id="QNM-P0-kzQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oRr-yj-lnY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="2607"/>
+        </scene>
+        <!--Shopping-->
+        <scene sceneID="yHj-9X-8XC">
+            <objects>
+                <viewController id="SrD-K8-EtB" customClass="SecondViewController" customModule="Memory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fj3-Pp-r5Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="TtM-Fl-wig"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LCG-EU-A1e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-U4-nsX">
+                                <rect key="frame" x="83" y="313" width="210" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJq-Sv-dpm">
+                                <rect key="frame" x="80" y="363" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="2Og-U4-nsX" secondAttribute="centerY" id="DcZ-Tj-MhC"/>
+                            <constraint firstItem="AJq-Sv-dpm" firstAttribute="centerX" secondItem="2Og-U4-nsX" secondAttribute="centerX" id="Xtj-bQ-yg0"/>
+                            <constraint firstItem="AJq-Sv-dpm" firstAttribute="top" secondItem="2Og-U4-nsX" secondAttribute="bottom" constant="8" symbolic="YES" id="nS4-u9-fhn"/>
+                            <constraint firstAttribute="centerX" secondItem="2Og-U4-nsX" secondAttribute="centerX" id="rVf-hP-tZG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shopping" image="ic_shopping_cart" id="DZq-Mf-Ea0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R07-ia-BDq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1744"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ic_apps" width="24" height="24"/>
         <image name="ic_book" width="24" height="24"/>
         <image name="ic_receipt" width="24" height="24"/>
+        <image name="ic_shopping_cart" width="24" height="24"/>
+        <image name="ic_store" width="24" height="24"/>
     </resources>
 </document>
